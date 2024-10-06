@@ -1,0 +1,62 @@
+<!-- javascript code -->
+                <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+                 <form onsubmit="sendEmail(); reset(); return false;">
+                <script>
+                    function sendEmail(){
+                          Email.send({
+                        SecureToken : " 3bfbf1cd-2526-414a-a4cc-d2a584c79971",
+                        To : 'entreprisekeitaetfrere@gmail.com',
+                        From : "entreprisekeitaetfrere@gmail.com",
+                        Subject : "testing email",
+                        Body : "Name:"+document.getElementById("name").value
+                             + "<br> Email:" + document.getElementById("email").value
+                             + "<br> Subject:" + document.getElementById("subject").value
+                             + "<br> Message:" + document.getElementById("message").value
+                         
+                    //     Body:"test by is coding, please like, share subscribe thank you...."
+                     }   ).then(
+                    message => alert("votre message a été envoyer avec succès")
+                    );
+                    }
+                   -->
+<!-- 
+                     function sendEmail(){
+                         Email.send({
+                             Host : "smtp.elasticemail.com",
+                             Username : "entreprisekeitaetfrere@gmail.com",
+                             Password : "Kondianakour@96",
+                             To : 'entreprisekeitaetfrere@gmail.com',
+                             From : document.getElementById("email").value,
+                             Subject : "New Contact Form enquiry",
+                             Body : "Name:"+document.getElementById("name").value
+                             + "<br> Email:" + document.getElementById("email").value
+                             + "<br> Subject:" + document.getElementById("subject").value
+                             + "<br> Message:" + document.getElementById("message").value
+                         }).then(
+                         message => alert(message)
+                         );
+                    }
+                </script> -->
+                 <!-- <script>
+                    function sendMail(){
+                        (function(){
+                            emailjs.init("dNMp1eyPqUY192uE_");
+                       })();
+
+                       var params = {
+                           name:document.querySelector("#name").value,
+                           email:document.querySelector("#email").value,
+                           subject:document.querySelector("#subject").value,
+                           message:document.querySelector("#message").value,
+                       };
+                       var serviceID ="service_j1m9wtj";
+                        var templateID ="template_9mpr9rd"; 
+
+                       emailjs.send(serviceID, templateID, params)
+                         .then(res =>{
+                            alert("votre message été envoyé avec succès");
+
+                     }  )
+                         .catch();
+                     }
+                  </script> -->
