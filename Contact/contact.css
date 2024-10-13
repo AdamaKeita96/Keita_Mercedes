@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f8f9fa;
+    text-align: center;
+    
+}
+::before ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;  
+}
+body{
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #7f8c8d;
+    border-bottom: 0.5px solid rgb(167, 167, 167);
+  
+}
+nav {
+    position: relative;
+    top: -2px;
+    position: fixed;
+    z-index: 100;
+}
+nav .navfixe {
+    position: relative;
+    position: fixed;
+    z-index: 100;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    margin-left: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 5px;
+    transition: 0.5s;
+    text-align: center;
+}
+nav ul li:hover{
+    background-color:rgb(156, 156, 156);
+    transition: 0.5s;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.liste-items{
+    color: #f1f1f1;
+    list-style-type: none;
+    height: 100%;
+    line-height: 50px;
+    text-align: centers;
+    font-size: 22px;
+}
+.items{
+    cursor: pointer;
+    margin:  0 20px;
+    flex-shrink: 0;
+}
+.items span{
+    font-size: 17px; 
+}
+/*sous liste */
+.sous-liste{
+    position: relative;
+    top: -2px;
+    display: none;
+}
+.items-sous-liste{
+    list-style-type: none;
+    text-align: center;
+    padding: 0 10px;
+    background: #7f8c8d;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 0.5px solid rgb(167, 167, 167);
+}
+.items-sous-liste:hover{
+    background: rgb(156, 156, 156);
+}
+.items:hover > ul{
+    display: block;
+}
+nav ul li{
+    border-bottom: 1px solid #bbb;
+}
+/*contact informaition*/
+
+.contact{
+    min-height: 100vh;
+    padding: 50px;
+    padding-top: 30%;
+    text-align: center;
+}
+.contenair{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contenair h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.contact-form{
+    text-align: left;
+}
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-group{
+  margin-bottom: 20px;  
+}
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: none;
+    background-color: #f8f9fa;
+    color: #333;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+button:hover{
+    background-color: #45a049;
+}
+.contact-info{
+    text-align: center;
+}
+.contact-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.contact-info p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+.contact-info i{
+    color: #4caf50;
+    margin-right: 10ox;
+}
+/*table d'horaire*/
+
+.tab{
+    border-collapse: collapse;
+    padding-bottom: 20px;
+    min-width: 400px;
+    width: auto;
+    cursor: pointer;
+    margin: 50px auto;
+    font-size: mediums;
+    
+}
+td, th{
+    padding: 10px 15px;
+    text-align: center;
+    border-style: ridge;
+    
+}
+/*contact*/
+.icons{
+    display: flex;
+    margin: 40px 0;
+    margin-left: 30%;
+}
+.icons li{
+    position: relative;
+    list-style: none;
+    height: 70px;
+    width: 70px;
+    background: whitesmoke;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: -3px -3px 7px #ffffff73,
+    3px 3px 5px rgba(94, 104,  121 , 0.288);
+}
+.icons li a{
+    line-height: 70px;
+    font-size: 27px;
+    color: #b6bbc5;
+}
+.first li.shadow-1 a{
+    box-shadow: -3px -3px 7px #ffffff73,
+    3px 3px 5px rgba(94, 104,  121 , 0.288);
+
+
+}
+@media screen and (max-width: 899px) {
+   
+    .contact{
+        width: 100%;
+        padding-top: 55%;
+        text-align: center;
+    }
+  .contenair{
+    padding: 20px;
+}
+.tab{
+    padding-left: 10px;
+    margin: 50px auto;
+    padding-bottom: 20px;
+    font-size: xx-small;
+    
+}
+td, th{
+    padding: 10px 2PX;
+    position:sticky;
+    margin: 10px;
+    text-align: left;
+    border-style: ridge;
+    
+}
+
+}
