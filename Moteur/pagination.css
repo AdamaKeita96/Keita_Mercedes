@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    text-align: center;
+    place-items: center;
+    background: #dde1e7;
+}
+.container{
+    background: #dde1e7;
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: -3px -3px 7px #ffffFF73,
+                3px 3px 5px rgba(94,104,121,0,288) ;
+
+}
+.container .pagination{
+    display: flex;
+    list-style: none;
+}
+.container .pagination li{
+    flex: 1px;
+    margin: 0 10px;
+}
+.pagination li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #4d3252;
+    height: 45px;
+    width: 55px;
+    display: block;
+    
+}
